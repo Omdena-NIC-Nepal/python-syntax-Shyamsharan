@@ -7,7 +7,7 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    return(f"my name is {name} and I am {age} years old. ")
+    return(f"My name is {name} and I am {age} years old.")
 
 
 def conditional_check(number):
@@ -18,12 +18,12 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    if (number > 10): 
-        return(f"The {number} is greater than 10")
-    if (number < 10):
-        return(f"The {number} is lesser than 10")
-    else:
-        return(f"The {number} is equal to 10")
+    if number > 10: 
+        return "Greater"
+    if number < 10:
+        return "Lesser"
+    if number == 10:
+        return "Equal"
 
 def loop_sum(n):
     """
@@ -77,7 +77,7 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    return set(list1) | set(list2)
+    return set(list1) & set(list2)
 
 def arithmetic_ops(a, b):
     """
@@ -94,8 +94,7 @@ def arithmetic_ops(a, b):
         'Multiplication': a * b, 
         'Power': a ** b, 
         'Remainder': a / b if b!= 0 else "Not possible to divide by zero"
-
-    }
+        }
 
 
 def logical_ops(x, y):
@@ -113,11 +112,11 @@ def logical_ops(x, y):
         'xor operation': x != y, 
         'not x operation': not x, 
         'not y operation': not y,
-    }
+        }
 
 def bitwise_ops(a, b):
     """
-    Perform bitwise operations.
+    Perform bitwise operations. 
     Args:
         a (int): First integer
         b (int): Second integer
@@ -130,4 +129,4 @@ def bitwise_ops(a, b):
         'bitwise xor': a ^ b,
         'bitwise left_shift': a << b,
         'bitwise right_shift': a >>b
-    }
+        }
