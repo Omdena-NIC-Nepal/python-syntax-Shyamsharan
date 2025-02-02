@@ -7,7 +7,7 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    return(f"My name is {name} and I am {age} years old.")
+    return f"My name is {name} and I am {age} years old"
 
 
 def conditional_check(number):
@@ -89,11 +89,11 @@ def arithmetic_ops(a, b):
         dict: Results of arithmetic operations
     """
     return {
-        'Sum': a + b,
-        'Difference': a - b, 
-        'Multiplication': a * b, 
-        'Power': a ** b, 
-        'Remainder': a / b if b!= 0 else "Not possible to divide by zero"
+        'sum': a + b,
+        'difference': a - b, 
+        'multiplication': a * b, 
+        'power': a ** b, 
+        'quotient': a / b if b!= 0 else "Not possible to divide by zero"
         }
 
 
@@ -107,11 +107,11 @@ def logical_ops(x, y):
         dict: Results of logical operations
     """
     return {
-        'and operation': x and y ,
-        'or operation': x or y,
-        'xor operation': x != y, 
-        'not x operation': not x, 
-        'not y operation': not y,
+        'and': x and y ,
+        'or': x or y,
+        'xor': x != y, 
+        'not x': not x, 
+        'not y': not y,
         }
 
 def bitwise_ops(a, b):
@@ -124,9 +124,9 @@ def bitwise_ops(a, b):
         dict: Results of bitwise operations
     """
     return {
-        'bitwise and ': a & b,
-        'bitwise or ': a | b, 
-        'bitwise xor': a ^ b,
-        'bitwise left_shift': a << b,
-        'bitwise right_shift': a >>b
+        'and ': a & b,
+        'or ': a | b, 
+        'xor': a ^ b,
+        'left_shift': a << b,
+        'right_shift': a >>b
         }
