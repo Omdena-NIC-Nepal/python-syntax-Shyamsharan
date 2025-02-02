@@ -7,7 +7,8 @@ def format_string(name, age):
     Returns:
         str: Formatted string
     """
-    pass
+    return(f"my name is {name} and I am {age} years old. ")
+
 
 def conditional_check(number):
     """
@@ -17,7 +18,12 @@ def conditional_check(number):
     Returns:
         str: "Greater", "Lesser", or "Equal"
     """
-    pass
+    if (number > 10): 
+        return(f"The {number} is greater than 10")
+    if (number < 10):
+        return(f"The {number} is lesser than 10")
+    else:
+        return(f"The {number} is equal to 10")
 
 def loop_sum(n):
     """
@@ -27,8 +33,13 @@ def loop_sum(n):
     Returns:
         int: Sum of numbers
     """
-    pass
-
+    i = 1
+    added_values = 0
+    while i <= n:
+        added_values += i
+        i = i+1
+    return(added_values)
+    
 def list_operations(numbers):
     """
     Perform operations on a list of numbers.
@@ -37,7 +48,11 @@ def list_operations(numbers):
     Returns:
         tuple: (sum, max, min)
     """
-    pass
+    if not numbers:
+        return(0, None, None)
+    return(sum(numbers), max(numbers), min(numbers))
+
+
 
 def dict_operations(students_dict):
     """
@@ -47,7 +62,11 @@ def dict_operations(students_dict):
     Returns:
         list: Names of students with scores > 80
     """
-    pass
+    Student = []
+    for item in students_dict:
+        if students_dict[item]> 80:
+            Student.append(item)
+    return Student
 
 def set_operations(list1, list2):
     """
@@ -58,7 +77,7 @@ def set_operations(list1, list2):
     Returns:
         set: Common elements
     """
-    pass
+    return set(list1) | set(list2)
 
 def arithmetic_ops(a, b):
     """
@@ -69,7 +88,15 @@ def arithmetic_ops(a, b):
     Returns:
         dict: Results of arithmetic operations
     """
-    pass
+    return {
+        'Sum': a + b,
+        'Difference': a - b, 
+        'Multiplication': a * b, 
+        'Power': a ** b, 
+        'Remainder': a / b if b!= 0 else "Not possible to divide by zero"
+
+    }
+
 
 def logical_ops(x, y):
     """
@@ -80,7 +107,13 @@ def logical_ops(x, y):
     Returns:
         dict: Results of logical operations
     """
-    pass
+    return {
+        'and operation': x and y ,
+        'or operation': x or y,
+        'xor operation': x != y, 
+        'not x operation': not x, 
+        'not y operation': not y,
+    }
 
 def bitwise_ops(a, b):
     """
@@ -91,4 +124,10 @@ def bitwise_ops(a, b):
     Returns:
         dict: Results of bitwise operations
     """
-    pass
+    return {
+        'bitwise and ': a & b,
+        'bitwise or ': a | b, 
+        'bitwise xor': a ^ b,
+        'bitwise left_shift': a << b,
+        'bitwise right_shift': a >>b
+    }
