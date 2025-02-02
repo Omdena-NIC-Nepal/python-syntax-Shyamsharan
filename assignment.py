@@ -108,8 +108,7 @@ def logical_ops(x, y):
     return {
         'and': x and y ,
         'or': x or y,
-        'not_x': not x, 
-        
+        'not_x': not x,
         }
 
 def bitwise_ops(a, b):
